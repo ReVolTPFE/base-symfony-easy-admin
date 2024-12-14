@@ -26,6 +26,7 @@ services:
     depends_on:
       - db
       - maildev
+    user: "1000:1000"
     environment:
       - NODE_ENV=development
     volumes:
