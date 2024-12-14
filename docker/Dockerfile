@@ -61,6 +61,4 @@ RUN a2ensite 000-public.conf
 RUN echo 'alias sc="php bin/console"' >> /etc/bash.bashrc
 RUN echo 'alias test:unit="export XDEBUG_MODE=coverage && rm -rf var && php vendor/bin/phpunit --path-coverage"' >> /etc/bash.bashrc
 
-RUN useradd admin -u 197609 -m
-
 WORKDIR /var/www/html

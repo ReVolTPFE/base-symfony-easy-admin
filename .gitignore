@@ -26,4 +26,5 @@
 
 ###> custom ###
 .idea
+docker/.database
 ###< custom ###

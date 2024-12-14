@@ -21,7 +21,6 @@ services:
       context: .
       dockerfile: docker/Dockerfile
     container_name: 'symfony-s7'
-    user: "197609:197609"
     ports:
       - "8080:80"
     depends_on:
