@@ -58,7 +58,9 @@ COPY ./docker/000-public.conf /etc/apache2/sites-available/000-public.conf
 
 RUN a2ensite 000-public.conf
 
-RUN echo 'alias sc="php bin/console"' >> /etc/bash.bashrc
-RUN echo 'alias test:unit="export XDEBUG_MODE=coverage && rm -rf var && php vendor/bin/phpunit --path-coverage"' >> /etc/bash.bashrc
+RUN useradd container -u 1000 -m
+
+RUN echo 'alias sc="php bin/console"' >> /home/container/.bashrc
+RUN echo 'alias test:unit="export XDEBUG_MODE=coverage && rm -rf var && php vendor/bin/phpunit --path-coverage"' >> /home/container/.bashrc
 
 WORKDIR /var/www/html
