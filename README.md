@@ -84,6 +84,7 @@ Connect as a super admin with the credentials `superadmin@example.com`, `azerty`
 - The logout page is available on path `/logout`.
 - The Back-Office main page is available on path `/admin` once logged in.
 <br>
+
 - Symfony: http://localhost:8080
 - PhpMyAdmin: http://localhost:8000 (user: root, password: root)
 - MailDev: http://localhost:8081
