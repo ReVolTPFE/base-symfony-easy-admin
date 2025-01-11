@@ -43,8 +43,8 @@ class DashboardController extends AbstractDashboardController
             MenuItem::linkToDashboard('Dashboard', 'fa fa-home'),
             MenuItem::section('Users'),
             MenuItem::linkToCrud('Users', 'fa fa-user', User::class),
-            MenuItem::section('Impersonation'),
-            MenuItem::linkToExitImpersonation('Stop impersonation', 'fa fa-exit'),
+            // MenuItem::section('Impersonation'),
+            // MenuItem::linkToExitImpersonation('Stop impersonation', 'fa fa-exit'),
         ];
     }
 }
